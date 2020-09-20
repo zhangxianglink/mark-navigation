@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>导航</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <header class="globalHeader">
+        <form action="https://www.baidu.com/s" method="get" class="searchForm">
+            <input type="text" name="wd">
+            <button type="submit">查询</button>
+        </form>
+    </header>
+
+    <main class="globalMain">
+        <ul class="siteList">
+            <li class="addSite">
+                <div class="icon">
+                    <svg class="icon-wrapper">
+                        <use xlink:href="#icon-add"></use>
+                    </svg>
+                </div>
+                <div class="text">
+                    新增网站
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script src="//at.alicdn.com/t/font_2064086_fcfxnk4qqw.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
