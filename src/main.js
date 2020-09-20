@@ -45,6 +45,7 @@ render()
 
 $('.addSite')
 .on('click',()=>{
+    
     let url = window.prompt('请添加网址.')
     if(url.indexOf('http') !== 0){
         url = 'https://' + url
@@ -55,6 +56,7 @@ $('.addSite')
           logoType:'text'
         });
     render()
+    e.stopPropagation()
 });
 
 // 页面关闭
